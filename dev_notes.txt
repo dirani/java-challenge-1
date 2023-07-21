@@ -10,3 +10,10 @@ UPDATE TEST SET NAME='Hi' WHERE ID=1;
 DELETE FROM TEST WHERE ID=2;
 
 
+to build baeldung:
+
+D:\java\tutorials\persistence-modules>
+mvn clean install
+
+load spring-boot-persistence on intelij
+maven loads through the IDE
