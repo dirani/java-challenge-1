@@ -59,10 +59,19 @@ Update the account beneficiaries using Account.makeContribution(MonetaryAmount)
 Save modified Account information using AccountRepository.updateBeneficiaries(Account)
 Create a RewardConfirmation using the RewardRepository
 
+<!-- google: create springboot application with endpoint to include a user in a user table
+next -->
+
+<!-- Spring boot - RESTful Web Service Endpoint for Create User and Addresses @OneToMany Relationship -->
+https://www.youtube.com/watch?v=tWX6SeHdv40
+
+<!-- Spring Boot Security Role-based Authorization Tutorial
+Written by  Nam Ha Minh
+Last Updated on 05 March 2023-->
+https://www.codejava.net/frameworks/spring-boot/spring-boot-security-role-based-authorization-tutorial
 
 
-
-
-
+<!-- Spring Boot JPA + H2 example: Build a CRUD Rest APIs -->
+https://www.bezkoder.com/spring-boot-jpa-h2-example/
 
 </dev_notes>

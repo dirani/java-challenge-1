@@ -1,13 +1,13 @@
-package com.example.javachallenge1;
+package com.bezkoder.spring.jpa.h2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JavaChallenge1Application {
+public class BezkoderApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(JavaChallenge1Application.class, args);
+		SpringApplication.run(BezkoderApplication.class, args);
 	}
 
 }

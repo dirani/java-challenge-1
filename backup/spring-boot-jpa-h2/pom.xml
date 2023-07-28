@@ -8,10 +8,10 @@
 		<version>3.1.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>java-challenge-1</artifactId>
+	<groupId>com.bezkoder.spring.jpa.h2</groupId>
+	<artifactId>spring-boot-jpa-h2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>java-challenge-1</name>
+	<name>spring-boot-jpa-h2</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
@@ -36,12 +36,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
-		<dependency>
-			<groupId>jakarta.persistence</groupId>
-			<artifactId>jakarta.persistence-api</artifactId>
-		</dependency>
-
 	</dependencies>
 
 	<build>
