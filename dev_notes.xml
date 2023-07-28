@@ -1,0 +1,68 @@
+<dev_notes>
+http://www.h2database.com/html/download.html
+
+DROP TABLE IF EXISTS TEST;
+CREATE TABLE TEST(ID INT PRIMARY KEY, NAME VARCHAR(255));
+INSERT INTO TEST VALUES(1, 'Hello');
+INSERT INTO TEST VALUES(2, 'World');
+SELECT * FROM TEST ORDER BY ID;
+UPDATE TEST SET NAME='Hi' WHERE ID=1;
+DELETE FROM TEST WHERE ID=2;
+
+<!-- -->
+to build baeldung:
+
+D:\java\tutorials\persistence-modules>
+mvn clean install
+
+load spring-boot-persistence on intelij
+maven loads through the IDE
+
+<!-- -->
+echo %JAVA_HOME%
+
+echo $Env:JAVA_HOME
+$env:JAVA_HOME="C:\Program Files\Java\jdk1.6.0_45"
+<!-- -->
+
+<!-- 
+https://spring.academy/courses/spring-introduction/lessons/spring-introduction-rewards-reference-domain
+-->
+
+AMOUNT    CREDIT_CARD_NUMBER    MERCHANT_NUMBER    DATE
+----------------------------------------------------------
+100.00  1234123412341234    1234567890      12/29/2010
+49.67   1234123412341234    0234567891      12/31/2010
+100.00  1234123412341234    1234567890      01/01/2010
+27.60   2345234523452345    3456789012      01/02/2010
+
+<!-- A standalone DiningBatchProcessor application reads this file and 
+submits each Dining record to the rewards application for processing -->
+
+DiningBatchProcessor 
+
+<!-- The RewardNetwork is the central interface clients such as 
+the DiningBatchProcessor use to invoke the application: -->
+
+    public interface RewardNetwork {
+        RewardConfirmation rewardAccountFor(Dining dining);
+    }
+
+RewardNetwork 
+
+The full rewardAccountFor(Dining) sequence incorporating these repositories is:
+
+Fetch the Account from the AccountRepository
+Fetch the Restaurant from RestaurantRepository
+Determine the Reward contribution (an instance of MonetaryAmount) using Restaurant.calculateBenefitFor(Account, Dining)
+Update the account beneficiaries using Account.makeContribution(MonetaryAmount)
+Save modified Account information using AccountRepository.updateBeneficiaries(Account)
+Create a RewardConfirmation using the RewardRepository
+
+
+
+
+
+
+
+</dev_notes>
