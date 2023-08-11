@@ -18,3 +18,7 @@ curl -v -X POST localhost:8080/employees -H 'Content-Type:application/json' -d '
 
 curl -v -X PUT localhost:8080/employees/3 -H 'Content-Type:application/json' -d '{"name": "Samwise Gamgee", "role": "ring bearer"}'
 
+curl -v http://localhost:8080/orders
+
+curl -v -X DELETE http://localhost:8080/orders/4/cancel
+
